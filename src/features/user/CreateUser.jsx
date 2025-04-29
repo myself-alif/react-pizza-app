@@ -37,6 +37,11 @@ function CreateUser() {
           <Button type="primary">Start ordering</Button>
         </div>
       )}
+      {username === "" && (
+        <div>
+          <Button type="primary">Enter</Button>
+        </div>
+      )}
     </form>
   );
 }
