@@ -21,6 +21,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/react-pizza-app",
+        element: <Home />,
+      },
+      {
         path: "/menu",
         element: <Menu />,
         loader: menuLoader,
