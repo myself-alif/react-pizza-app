@@ -84,7 +84,7 @@ function CreateOrder() {
             )}
           </div>
           {!position.latitude && !position.longitude && (
-            <span className="z-999 absolute right-[3px] top-[3px] md:right-[5px] md:top-[5px]">
+            <span className="z-999 absolute right-[3px] top-[35px] md:right-[5px] md:top-[5px]">
               <Button
                 disabled={isLoadingAddress}
                 type="small"
@@ -156,7 +156,7 @@ export async function action({ request }) {
 
   store.dispatch(clearCart());
 
-  return redirect(`/order/${newOrder.id}`);
+  return redirect(`/react-pizza-app/order/${newOrder.id}`);
 }
 
 export default CreateOrder;

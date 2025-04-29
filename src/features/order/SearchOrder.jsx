@@ -8,7 +8,7 @@ export default function SearchOrder() {
   function handleSubmit(e) {
     e.preventDefault();
     if (!query) return;
-    navigate(`/order/${query}`);
+    navigate(`/react-pizza-app/order/${query}`);
     setQuery("");
   }
 

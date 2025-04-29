@@ -16,31 +16,31 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     errorElement: <Error />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
+      // {
+      //   path: "/",
+      //   element: <Home />,
+      // },
       {
         path: "/react-pizza-app",
         element: <Home />,
       },
       {
-        path: "/menu",
+        path: "/react-pizza-app/menu",
         element: <Menu />,
         loader: menuLoader,
         errorElement: <Error />,
       },
       {
-        path: "/cart",
+        path: "/react-pizza-app/cart",
         element: <Cart />,
       },
       {
-        path: "/order/new",
+        path: "/react-pizza-app/order/new",
         element: <CreateOrder />,
         action: createOrderAction,
       },
       {
-        path: "/order/:orderId",
+        path: "/react-pizza-app/order/:orderId",
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,

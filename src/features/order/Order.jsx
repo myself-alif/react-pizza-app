@@ -19,7 +19,8 @@ function Order() {
   const fetcher = useFetcher();
 
   useEffect(() => {
-    if (!fetcher.data && fetcher.state === "idle") fetcher.load("/menu");
+    if (!fetcher.data && fetcher.state === "idle")
+      fetcher.load("/react-pizza-app/menu");
   }, [fetcher]);
   // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff
   const {
@@ -87,6 +88,9 @@ function Order() {
         <p className="font-bold">
           To pay on delivery: {formatCurrency(orderPrice + priorityPrice)}
         </p>
+        <span className="inline-block rounded-full bg-green-500 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-green-50">
+          Cash on delivery
+        </span>
       </div>
       {!priority && <UpdateOrder order={order} />}
     </div>

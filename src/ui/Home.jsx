@@ -9,14 +9,14 @@ function Home() {
       <h1 className="mb-8 text-xl font-semibold md:text-3xl">
         The best pizza.
         <br />
-        <span className="text-yellow-500">
+        <span className="mt-5 inline-block text-yellow-500">
           Straight out of the oven, straight to you.
         </span>
       </h1>
       {userName === "" ? (
         <CreateUser />
       ) : (
-        <Button type="primary" to="/menu">
+        <Button type="primary" to="/react-pizza-app/menu">
           Continue ordering, {userName}
         </Button>
       )}

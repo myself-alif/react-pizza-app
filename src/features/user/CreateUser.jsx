@@ -15,7 +15,7 @@ function CreateUser() {
 
     dispatch(updateName(username));
     setUsername("");
-    navigate("/menu");
+    navigate("/react-pizza-app/menu");
   }
 
   return (
